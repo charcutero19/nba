@@ -1,0 +1,268 @@
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
+
+body {
+    max-width: 1650px;
+    margin: auto;
+    background-color: #9381ffff;
+    user-select: none;
+}
+
+.letrero {
+    height: 80px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.letrero-container {
+    display: none;
+    border-radius: 16px;
+    background-color: #9381ffff;
+    max-height: 100px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    flex-grow: 0;
+}
+
+
+.menu {
+    display: none;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+@media(max-width:1668px){
+    nav {
+        justify-content: space-between;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .inicioSesion,.premium {
+        flex-grow: 3;
+    }
+
+    #utilidades {display: none;}
+
+    .kefri {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .letrero-container {
+        display: block;
+    }
+
+}
+
+@media (max-width:966px) {
+    .inicioSesion,.premium {
+        display: none;
+    }
+}
+
+
+
+a {
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-between;
+    border-radius: 12px;
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #7c69f0ff;
+    max-width: 1650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+.kefri {
+    width: 140px;
+    box-shadow: 2px 2px 2px 1px black;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+
+
+
+
+#utilidades {
+    background-color: black;
+    color: white;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+}
+
+
+
+.inicioSesion,.premium {
+    border-radius: 20px;
+    font-family: 'San Francisco';
+    font-weight: bolder;
+    font-size: 30px;
+    min-width: 250px;
+    height: 100px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    line-height: 100px;
+    -webkit-user-select: none;
+}
+
+
+
+.herramientas {
+    background-color: #9381ffff;
+    color: white;
+    display: none;
+}
+
+
+
+.premium {
+    background-color: #ffd60aff;
+    color: #9381ffff;
+    cursor: pointer;
+}
+
+
+
+.inicioSesion {
+    background-color: #9381ffff;
+    color: white;
+    cursor: pointer;
+}
+
+#boton:active,#utilidades:active,.kefri:active,.menu:active{
+    transition: 0.1s;
+    opacity: 0.7;
+}
+
+
+
+.unidades_notas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+#unidad_nota {
+    background-color: white;
+    padding: 20px;
+    height: 260px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-size: 40px;
+    font-family: 'San Francisco';
+    word-break: break-all;
+    min-width: 250px;
+}
+
+.unidad_nota-1,.unidad_nota-2,.unidad_nota-3,.unidad_nota-4,.unidad_nota-5 {
+    flex-grow: 1;
+}
+
+.unidad_nota-6,.unidad_nota-7,.unidad_nota-8,.unidad_nota-9,.unidad_nota-10,.unidad_nota-11 {
+    flex-grow: 1;
+}
+
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+.calendarioCalendar {
+    background-color: white;
+    padding: 30px;
+    height: 620px;
+    width: 1650px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: #7c69f0ff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.calendarioCalendarGrilla {
+    background-color: white;
+    flex-grow: 1;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+
+
+
+
+.taskTasks {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.taskTasksUnidad {
+    background-color: white;
+    height: 150px;
+    width: 1650px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.settingsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.settingsUnidad {
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    font-family: 'San Francisco';
+    word-break: break-all;
+    height: 150px;
+    width: 1650px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    line-height: 150px;
+}

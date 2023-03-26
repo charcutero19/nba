@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  background: #0065ff;
+}
+
+body {
+  background-color: #0065ff;
+  height: 100%;
+}
+
+nav {
+  width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  height: 90px;
+  color: white;
+  display: flex;
+  font-size: 35px;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Gilroy-Heavy', sans-serif;
+  box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+  background-color: black;
+}
+
+.kefriNav {
+  animation: zoomIn;
+  animation-duration: 1s;
+  margin-left: 110px;
+}
+
+.utilitiesNav {
+  display: flex;
+  gap: 60px;
+  font-size: 30px;
+  animation: zoomIn;
+  animation-duration: 1s;
+  margin-right: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.mainTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 1440px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.first, .second {
+  box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+  background-color: white;
+  width: 48.611111%;
+  padding: 20px;
+}
+
+
+h1 {
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-size: 55px;
+  color: black;
+}
+
+h2 {
+  font-family: 'Gilroy-Light', sans-serif;
+  font-size: 40px; 
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+.logoNBA {
+  margin: auto;
+  margin-top: 50px;
+  display: block;
+}
+
+
